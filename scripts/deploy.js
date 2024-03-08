@@ -10,6 +10,13 @@ async function main() {
 
   // Display the contract address
   console.log(`Degen token deployed to ${degen.address}`);
+
+  // Verify the contract after deploying
+  await hre.run("verify:verify", {
+    address: degen.target,
+    constructorArguments: [],
+    contract: "contracts/DegenToken.sol:DegenToken",
+  });
 }
 
 // Hardhat recommends this pattern to be able to use async/await everywhere
