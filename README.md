@@ -1,41 +1,36 @@
 # Project Title
 
-Simple overview of use/purpose.
+Degen Token
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This contract allows the game owner to send token to players, players can send token to other player, players can redeem game items with token and other features.
+<br/><br/>
 
 ## Getting Started
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+```shell
+
+npm install
+
+```
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+```shell
 
-## Help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat run scripts/deploy.js
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
 ```
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
+Joshua Adesanya
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the [MIT] License
