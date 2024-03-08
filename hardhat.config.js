@@ -1,5 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
-require('dotenv').config();
+require("dotenv").config();
 
 const FORK_FUJI = false;
 const FORK_MAINNET = false;
@@ -27,7 +27,7 @@ module.exports = {
     },
     fuji: {
       url: "https://api.avax-test.network/ext/bc/C/rpc",
-      gasPrice: 225000000000,
+      //gasPrice: 225000000000,
       chainId: 43113,
       accounts: [process.env.WALLET_PRIVATE_KEY], // we use a .env file to hide our wallets private key
     },

@@ -13,7 +13,7 @@ async function main() {
 
   // Verify the contract after deploying
   await hre.run("verify:verify", {
-    address: degen.target,
+    address: degen.address,
     constructorArguments: [],
     contract: "contracts/DegenToken.sol:DegenToken",
   });
